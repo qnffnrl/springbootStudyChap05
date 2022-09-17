@@ -12,7 +12,7 @@ public class GetController {
     /**
      * @RequestMapping http://localhost:8080/api/v1/api-get/hello
      */
-    @RequestMapping(value = "/hello", method = RequestMethod.GET) // -> 스프링 4.3 버전 이후로 사용안함
+    @RequestMapping(value = "/hello", method = RequestMethod.GET) // @RequestMapping -> 스프링 4.3 버전 이후로 사용안함
     public String getHello() {
         return "Hello World";
     }
@@ -36,7 +36,7 @@ public class GetController {
     }
 
     /**
-     * @PathVariable 변수 명 통일 불가 시 / 특정 변수 명으로 선언하고 싶을때
+     * @PathVariable 변수 명 통일 불가 시 or 특정 변수 명으로 선언하고 싶을때
      * http://localhost:8080/api/v1/api-get/variable2
      */
     @GetMapping("/variable2/{variable}")

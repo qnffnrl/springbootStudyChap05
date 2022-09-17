@@ -43,9 +43,13 @@ public class PutController {
 
     /**
      * ResponseEntity를 활용한 PUT 메서드 구현
+     *
+     * ResponseEntity
+     * 스프링에는 HTTPEntity 클래스가 있는데 ResponseEntity와 RequestEntity는 이 클래스르 상속받아 구현한 클래스이다.
+     * 그중 ResponseEntity는 서버에 들어온 요청에 대해 응답 데이터를 구성해서 전달할 수 있게 한다
+     *
      * http://localhost:8080/api/v1/put-api/memebr3
      */
-
     @PutMapping("/member3")
     public ResponseEntity<MemberDto> postMember3(@RequestBody MemberDto memberDto) {
         return ResponseEntity

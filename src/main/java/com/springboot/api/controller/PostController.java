@@ -27,7 +27,6 @@ public class PostController {
      *
      * http://localhost:8080/api/v1/post-api/member
      */
-
     @PostMapping("/member") // -> method 요소를 정의하지 않아도 됨
     public String postMember(@RequestBody Map<String, Object> postData){
 

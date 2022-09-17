@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 public class DeleteController {
 
     /**
-     * @PathVariable과 @RequestParam을 활용한 DELETE 메서드 구현
+     * @PathVariable을 활용한 DELETE 메서드 구현
      * http://localhost:8080/api/v1/delete-api/{String 값}
      */
     @DeleteMapping("/{variable}")
@@ -17,6 +17,7 @@ public class DeleteController {
     }
 
     /**
+     * @RequestParam을 활용한 DELETE 메서드 구현
      * http://localhost:8080/api/v1/delete-api/request?email=value
      */
     @DeleteMapping("/request")
