@@ -82,8 +82,32 @@ public class GetContoller {
      * http://localhost:8080/api/v1/get-api/request3?name=value1&email=value2&organization=value3
      */
     @GetMapping("/request3")
-    public String getRequestParam3(MemberDto memberDto){
+    public String getRequestParam3(MemberDto memberDto) {
 //        return memberDto.getName() + " " + memberDto.getEmail() + " " + memberDto.getOrganization();
         return memberDto.toString();
+    }
+
+    /**
+     * 정리
+     */
+
+    @GetMapping("/test")
+    public String test(){
+        return "test";
+    }
+
+    @GetMapping("/test2")
+    public String test2(@RequestParam String id){
+        return id;
+    }
+
+    @GetMapping("/test3/{val}")
+    public String test3(@PathVariable String val) {
+        return val;
+    }
+
+    @GetMapping("/test4/{val2}")
+    public String test4(@PathVariable("val2") String parameter){
+        return parameter;
     }
 }
