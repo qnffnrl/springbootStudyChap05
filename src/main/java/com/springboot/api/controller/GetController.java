@@ -1,4 +1,4 @@
-package com.springboot.api.contoller;
+package com.springboot.api.controller;
 
 import com.springboot.api.dto.MemberDto;
 import org.springframework.web.bind.annotation.*;
@@ -7,7 +7,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v1/get-api") // -> 클래스 레벨에서 선언되면 내부 메소드의 URL 앞에 공통 적용됨
-public class GetContoller {
+public class GetController {
 
     /**
      * @RequestMapping http://localhost:8080/api/v1/api-get/hello
